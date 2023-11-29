@@ -7,15 +7,16 @@ import {
 } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
+import Link from "next/link";
 
 const items: MenuProps["items"] = [
   {
-    label: "Manage Users",
+    label: <Link href={"/users"}>Manage Users</Link>,
     key: "users",
     icon: <MailOutlined />,
   },
   {
-    label: "Manage Blogs",
+    label: <Link href={"/blogs"}>Manage Blogs</Link>,
     key: "blogs",
     icon: <AppstoreOutlined />,
   },
